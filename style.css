@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Classes auxiliares */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #d9d9d9;
+}
+
+.container .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .menu .logo {
+    padding: 0 40px;
+}
+
+.container .menu .logo a {
+    text-decoration: none;
+    color: #545454;
+    font-size: 1.8rem;
+}
+
+.container .menu .user-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .menu .user-content a {
+    text-decoration: none;
+    color: #a6a6a6;
+}
+
+.container .menu .user-content i {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.container .menu .user-content .menu-user {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #545454;
+    padding: 20px 10px;
+}
+
+.container .menu .user-content .menu-user i {
+    font-size: 3rem;
+    margin: 0 5px;
+    color: #a6a6a6;
+}
+
+.container .menu .user-content .menu-user .user-options p {
+    font-size: 1.5rem;
+    padding-right: 5px;
+    color: #d9d9d9;
+}
+
+.container .menu .user-content .menu-user .user-options p:last-child {
+    font-size: 1.1rem;
+    color: #d9d9d9;
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+    margin: 0 10px;
+}
+
+.burger > div {
+    width: 25px;
+    height: 2px;
+    background-color: #545454;
+    margin: 5px 0;
+}
+
+/* Section menu-texto */
+
+.menu-texto {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+}
+
+.menu-text-single {
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+
+.menu-text-single span {
+    padding: 0 60px;
+    vertical-align: center;
+    font-size: 1.1rem;
+    color: #545454;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.menu-text-single span:hover {
+    color: #141414;
+    cursor: pointer;
+}
+
+/* Section breadcrumb */
+
+.breadcrumb {
+    background-color: #f7f7f7;
+    padding: 17px 0;
+}
+
+.breadcrumb p {
+    font-size: 1.7rem;
+    padding: 0 40px;
+    color: #545454;
+    font-weight: bold;
+}    
+
+/* Section whiteboard */
+
+.board { 
+    width: 1280px;
+    height: 600px;
+    background-color: #fff;
+    margin: -10px auto;
+    box-shadow: 0px 5px 24px -5px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 768px) {
+
+    .container .menu .user-content .menu-icons {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
